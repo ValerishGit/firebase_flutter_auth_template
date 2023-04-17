@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "9908550140",
+    "project_id": "fir-login-template-e4400",
+    "storage_bucket": "fir-login-template-e4400.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9908550140:android:8efe6a4952b442f65b9a79",
+        "android_client_info": {
+          "package_name": "com.example.vertex_fb_auth_template"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9908550140-mdknu71c85d8f4vuc432el3mapsoh5ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGDuuXdjW6ieDdfbMg-2w4q5ug7rK6PC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9908550140-mdknu71c85d8f4vuc432el3mapsoh5ei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
