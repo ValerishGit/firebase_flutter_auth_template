@@ -2,8 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:loader_overlay/loader_overlay.dart';
 import 'package:vertex_fb_auth_template/controllers/auth_controller.dart';
+
+const themeBox = 'hiveThemeBox';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -15,10 +18,18 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   //Getx Auth Controller
   final AuthController authController = Get.find<AuthController>();
+  bool isDarkMode = false;
 
   //Input Field Controllers
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+
+  darkModeChanged(value) {
+    Hive.box(themeBox).put('darkMode', !value);
+    setState(() {
+      isDarkMode = value;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -63,6 +74,15 @@ class _LoginPageState extends State<LoginPage> {
                           _emailController.text, _passwordController.text);
                     },
                     child: const Text('Log in'),
+                  ),
+                  const SizedBox(
+                    height: 16,
+                  ),
+                  Center(
+                    child: Text(
+                      authController.errorMsg.value,
+                      style: TextStyle(color: Colors.red.shade400),
+                    ),
                   ),
                   const Spacer(),
                   ElevatedButton(

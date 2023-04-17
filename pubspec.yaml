@@ -38,6 +38,7 @@ dependencies:
   firebase_auth: ^4.4.1
   loader_overlay: ^2.2.0
   get: ^4.6.5
+  hive_flutter: ^1.1.0
 
 dev_dependencies:
   flutter_test:
