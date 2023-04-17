@@ -8,9 +8,7 @@ To get started with this app, you'll need to have Flutter installed on your mach
 
 Once you have Flutter installed, you can clone this repository to your local machine
 
-```js
-After cloning the repository, you'll need to set up Firebase for your app. Here's how to do
-```
+After cloning the repository, you'll need to set up Firebase for your app. Go to the Firebase Console and follow instructions
 
 ## Usage
 
